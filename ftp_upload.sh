@@ -3,7 +3,7 @@
 HOST=ftp.servage.net  #This is the FTP servers host or IP address.
 
 #Move into the dir where we will upload all wheels
-cd wheelhouse
+cd wheelhouse-lite
 
 ftp -inv $HOST << EOF
 
