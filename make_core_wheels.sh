@@ -8,6 +8,6 @@ EXIT_STATUS=0
 #pip wheel --wheel-dir=./wheelhouse --no-deps pandas==$PANDAS_VERSION_1 || EXIT_STATUS=$?
 #pip wheel --wheel-dir=./wheelhouse --no-deps pandas==$PANDAS_VERSION_2 || EXIT_STATUS=$?
 
-./ mpl-lite.sh
+./mpl-lite.sh
 
 exit $EXIT_STATUS

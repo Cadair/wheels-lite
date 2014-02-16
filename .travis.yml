@@ -36,8 +36,8 @@ install:
 #build dependacies.
     - pip wheel --wheel-dir=./wheelhouse numpy==$NUMPY_VERSION_1
     - pip install --use-wheel --no-index --find-links=./wheelhouse numpy==$NUMPY_VERSION_1
-    - pip wheel --wheel-dir=./wheelhouse cython
-    - pip install --use-wheel --no-index --find-links=./wheelhouse cython
+    #    - pip wheel --wheel-dir=./wheelhouse cython
+    #    - pip install --use-wheel --no-index --find-links=./wheelhouse cython
 
 script:
     - if [[ $CORE == 1 ]]; then bash ./make_core_wheels.sh; fi
